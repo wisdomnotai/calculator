@@ -45,3 +45,13 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+.keys button{
+    height:60px;
+    background-color: #f3e8ff;
+    color: #000;
+    border-right: 4px solid gray;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
