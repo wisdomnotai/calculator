@@ -1,14 +1,21 @@
 //connecting the button nodes
 const one = document.querySelectorAll(".one");
-const zero = document.querySelectorAll(".zero");
 
 //getting the display nodes
 const display = document.querySelector("#display")
 
 //making the display responsive to the buttons
-one.forEach(function(button) {
-    button.addEventListener("click", function (){
-    display.value="1";
+one.forEach((button) => {
+    button.addEventListener("click", () => {
+    display.value = "1";
 });
 });
 
+//making the display responsive to all zero buttons
+const zero = document.querySelectorAll(".zero");
+
+zero.forEach((button) => {
+    button.addEventListener("click", () => {
+        display.value = "0";
+    })
+})
