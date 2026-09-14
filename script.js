@@ -32,6 +32,9 @@ zero.forEach((button) => {
 //adding the clear functionality
 clear.addEventListener("click", () =>{
     display.value = "";
+    firstNumber = "";
+    operator = "";
+    secondNumber = "";
 });
 //adding the delete functionality
 backspace.addEventListener("click", () => {
