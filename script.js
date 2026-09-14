@@ -7,7 +7,7 @@ const display = document.querySelector("#display")
 //making the display responsive to the buttons
 one.forEach((button) => {
     button.addEventListener("click", () => {
-    display.value = "1";
+    display.value += "1";
 });
 });
 
@@ -16,6 +16,6 @@ const zero = document.querySelectorAll(".zero");
 
 zero.forEach((button) => {
     button.addEventListener("click", () => {
-        display.value = "0";
+        display.value += "0";
     })
 })
