@@ -1,6 +1,7 @@
 //connecting the button nodes
 const one = document.querySelectorAll(".one");
-
+const zero = document.querySelectorAll(".zero");
+const clear = document.querySelector(".clear");
 //getting the display nodes
 const display = document.querySelector("#display")
 
@@ -12,10 +13,12 @@ one.forEach((button) => {
 });
 
 //making the display responsive to all zero buttons
-const zero = document.querySelectorAll(".zero");
-
 zero.forEach((button) => {
     button.addEventListener("click", () => {
         display.value += "0";
     })
 })
+//adding the clear functionality
+clear.addEventListener("click", () =>{
+    display.value = "";
+});
