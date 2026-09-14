@@ -20,3 +20,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.cal_body {
+    width: 350px;
+    padding: 20px;
+    background-color: #4b176d;
+    border: 6px solid #1e0b2b;
+}
