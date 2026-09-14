@@ -24,8 +24,9 @@ body{
 .cal_body {
     width: 350px;
     padding: 20px;
-    background-color: rgb(207, 85, 193);
+    background-color: #4b176d;
     border: 6px solid #1e0b2b;
+    box-shadow: 8px 8px 0 #12071a;
 }
 
 .calculator_input {
@@ -42,9 +43,10 @@ body{
 }
 .keys {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
 .keys button{
     height:60px;
     background-color: #f3e8ff;
@@ -71,5 +73,11 @@ body{
 }
 .keys .calculate {
     background-color: #8c39df;
+    color: #241033;
+}
+.keys .calculate {
+    grid-column: 1 / 5;
+    grid-row:4;
+    background-color: #c084fc;
     color: #241033;
 }
