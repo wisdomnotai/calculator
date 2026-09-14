@@ -24,7 +24,7 @@ body{
 .cal_body {
     width: 350px;
     padding: 20px;
-    background-color: #4b176d;
+    background-color: rgb(207, 85, 193);
     border: 6px solid #1e0b2b;
 }
 
@@ -61,4 +61,15 @@ body{
 .keys button:active{
     background-color: #e1d5ea;
     transform: translateY(3px);
+}
+.keys .add,
+.keys .subtract,
+.keys .multiply,
+.keys .divide {
+    background-color: #542c78;
+    color: #f3e8ff;
+}
+.keys .calculate {
+    background-color: #8c39df;
+    color: #241033;
 }
