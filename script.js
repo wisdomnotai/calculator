@@ -12,6 +12,7 @@ const add = document.querySelector(".add");
 const calculate = document.querySelector(".calculate");
 const subtract = document.querySelector(".subtract");
 const multiply = document.querySelector(".multiply");
+const divide = document.querySelector(".divide");
 //getting the display nodes
 const display = document.querySelector("#display");
 
@@ -59,6 +60,9 @@ calculate.addEventListener("click", () => {
     if(operator === "*"){
         answer = first * second;
     }
+    if(operator === "/"){
+        answer = first/second;
+    }
     display.value = answer.toString(2);
 });
 //adding the substraction functionality
@@ -71,5 +75,11 @@ subtract.addEventListener("click", () => {
 multiply.addEventListener("click", () => {
     firstNumber = display.value;
     operator = "*";
+    display.value = "";
+})
+//adding the divide funcitonality
+divide.addEventListener("click", () => {
+    firstNumber = display.value;
+    operator = "/";
     display.value = "";
 })
