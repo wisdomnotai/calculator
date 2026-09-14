@@ -12,15 +12,42 @@ body{
     background-repeat:no-repeat;
     max-width: 100%;
     min-height: 100vh;
+    width:100%;
+    height:100;
+    overflow:hidden;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(assets/pexels-heather-green-1125370-18418305.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.7em;
+    border: 6px solid #1e0b2b;
+    margin: 15px auto;
+    width: 80%;
+    background-color: #4b176d;
+    color: #d8c7e8;
+    padding: 8px;
+    box-shadow: 8px 8px 0 #12071a;
 }
 
 .container {
-    min-height: 100vh;
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .cal_body {
     width: 350px;
     padding: 20px;
