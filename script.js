@@ -42,14 +42,21 @@ add.addEventListener("click", () =>{
     display.value = "";
 })
 //adding the calculate funcitonality
-calculate = calculate.addEventListener("click", () => {
-    secondNumber = display.value;
-    const first = parseInt(firstNumber,2);
-    const second = parseInt(secondNumber,2);
-    const answer = first + second;
-    answer.toString(2);
-});
+// adding the calculate functionality
 
+calculate.addEventListener("click", () => {
+    secondNumber = display.value;
+    const first = parseInt(firstNumber, 2);
+    const second = parseInt(secondNumber, 2);
+    let answer;
+    if (operator === "+") {
+        answer = first + second;
+    }
+    if (operator === "-") {
+        answer = first - second;
+    }
+    display.value = answer.toString(2);
+});
 //adding the substraction functionality
 subtract.addEventListener("click", () => {
     firstNumber = display.value;
