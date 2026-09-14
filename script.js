@@ -11,8 +11,9 @@ const backspace = document.querySelector(".delete")
 const add = document.querySelector(".add");
 const calculate = document.querySelector(".calculate");
 const subtract = document.querySelector(".subtract");
+const multiply = document.querySelector(".multiply");
 //getting the display nodes
-const display = document.querySelector("#display")
+const display = document.querySelector("#display");
 
 //making the display responsive to the buttons
 one.forEach((button) => {
@@ -55,6 +56,9 @@ calculate.addEventListener("click", () => {
     if (operator === "-") {
         answer = first - second;
     }
+    if(operator === "*"){
+        answer = first * second;
+    }
     display.value = answer.toString(2);
 });
 //adding the substraction functionality
@@ -63,3 +67,9 @@ subtract.addEventListener("click", () => {
     operator = "-";
     display.value = "";
 });
+//adding the multiply functionality
+multiply.addEventListener("click", () => {
+    firstNumber = display.value;
+    operator = "*";
+    display.value = "";
+})
