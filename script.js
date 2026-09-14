@@ -60,10 +60,17 @@ calculate.addEventListener("click", () => {
     if(operator === "*"){
         answer = first * second;
     }
-    if(operator === "/"){
-        answer = first/second;
+    if (operator === "/") {
+        if (second === 0) {
+        display.value = "ERROR";
+        return;
     }
+    answer = first / second;
+}
     display.value = answer.toString(2);
+    firstNumber = "";
+    operator = "";
+    secondNumber = "";
 });
 //adding the substraction functionality
 subtract.addEventListener("click", () => {
