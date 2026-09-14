@@ -55,3 +55,10 @@ body{
     font-weight: bold;
     cursor: pointer;
 }
+.keys button:hover {
+    background-color: #e1d5ea;
+}
+.keys button:active{
+    background-color: #e1d5ea;
+    transform: translateY(3px);
+}
