@@ -2,7 +2,15 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    text-align:center;
     font-family: monospace;
+}
+
+body{
+    background-image: url(assets/pexels-heather-green-1125370-18418305.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    max-width: 100%;
+    min-height: 100vh;
 }
 
