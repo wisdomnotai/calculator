@@ -2,6 +2,7 @@
 let firstNumber = "";
 let operator = "";
 let secondNumber = "";
+
 //connecting the button nodes
 const one = document.querySelectorAll(".one");
 const zero = document.querySelectorAll(".zero");
@@ -9,6 +10,7 @@ const clear = document.querySelector(".clear");
 const backspace = document.querySelector(".delete")
 const add = document.querySelector(".add");
 const calculate = document.querySelector(".calculate");
+const subtract = document.querySelector(".subtract");
 //getting the display nodes
 const display = document.querySelector("#display")
 
@@ -38,5 +40,19 @@ add.addEventListener("click", () =>{
     firstNumber = display.value;
     operator = "+";
     display.value = "";
-
 })
+//adding the calculate funcitonality
+calculate = calculate.addEventListener("click", () => {
+    secondNumber = display.value;
+    const first = parseInt(firstNumber,2);
+    const second = parseInt(secondNumber,2);
+    const answer = first + second;
+    answer.toString(2);
+});
+
+//adding the substraction functionality
+subtract.addEventListener("click", () => {
+    firstNumber = display.value;
+    operator = "-";
+    display.value = "";
+});
